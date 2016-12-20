@@ -13,29 +13,13 @@
 
     <dependencies>
         <dependency>
-            <groupId>net.basiccloud.dependency</groupId>
-            <artifactId>foundation-dependency-rpc</artifactId>
-            <version>0.1.0-SNAPSHOT</version>
-            <type>pom</type>
-            <scope>import</scope>
-        </dependency>
-        <dependency>
-            <groupId>net.basiccloud.dependency</groupId>
-            <artifactId>foundation-dependency-spring</artifactId>
-            <version>0.1.0-SNAPSHOT</version>
-            <type>pom</type>
-            <scope>import</scope>
-        </dependency>
-
-        <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
-            <version>1.4.1.RELEASE</version>
         </dependency>
         <dependency>
             <groupId>net.basiccloud.etcd</groupId>
             <artifactId>foundation-etcd-registry</artifactId>
-            <version>0.1.0-SNAPSHOT</version>
+            <version>${foundation.etcd.reigistry.version}</version>
         </dependency>
     </dependencies>
 

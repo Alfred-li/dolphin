@@ -20,14 +20,28 @@
         <module>dolphin-client</module>
     </modules>
 
-    <distributionManagement>
-        <snapshotRepository>
-            <id>ossrh</id>
-            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
-        </snapshotRepository>
-        <repository>
-            <id>ossrh</id>
-            <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
-        </repository>
-    </distributionManagement>
+    <properties>
+        <rpc.dependency.version>0.1.0-SNAPSHOT</rpc.dependency.version>
+        <spring.dependency.version>0.1.0-SNAPSHOT</spring.dependency.version>
+        <foundation.etcd.reigistry.version>0.1.0-SNAPSHOT</foundation.etcd.reigistry.version>
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>net.basiccloud.dependency</groupId>
+                <artifactId>foundation-dependency-rpc</artifactId>
+                <version>${rpc.dependency.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>net.basiccloud.dependency</groupId>
+                <artifactId>foundation-dependency-spring</artifactId>
+                <version>${spring.dependency.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
 </project>
