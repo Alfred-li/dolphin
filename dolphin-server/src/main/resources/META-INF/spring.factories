@@ -1,0 +1,1 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=net.basiccloud.dolphin.internal.DolphinConfiguration
